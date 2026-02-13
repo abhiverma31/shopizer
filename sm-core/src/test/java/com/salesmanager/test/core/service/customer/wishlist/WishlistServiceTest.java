@@ -64,13 +64,13 @@ public class WishlistServiceTest {
 
     @Test
     public void testGetByCustomer_CreateNewWishlist() throws ServiceException {
-        when(wishlistRepository.findByCustomerId(2L)).thenReturn(null);
+        when(wishlistRepository.findByCustomerId(2L)).thenReturn(null).thenReturn(mockWishlist);
         when(wishlistRepository.save(any(Wishlist.class))).thenReturn(mockWishlist);
 
         Wishlist result = wishlistService.getByCustomer(2L);
 
         assertNotNull(result);
-        verify(wishlistRepository, times(1)).findByCustomerId(2L);
+        verify(wishlistRepository, times(2)).findByCustomerId(2L);
         verify(wishlistRepository, times(1)).save(any(Wishlist.class));
     }
 
