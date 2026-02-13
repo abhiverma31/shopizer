@@ -96,22 +96,22 @@
 			<dependency>
 				<groupId>com.shopizer</groupId>
 				<artifactId>sm-core</artifactId>
-				<version>3.2.5</version>
+				<version>3.2.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>com.shopizer</groupId>
 				<artifactId>sm-core-model</artifactId>
-				<version>3.2.5</version>
+				<version>3.2.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>com.shopizer</groupId>
 				<artifactId>sm-core-modules</artifactId>
-				<version>3.2.5</version>
+				<version>3.2.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>com.shopizer</groupId>
 				<artifactId>sm-shop-model</artifactId>
-				<version>3.2.5</version>
+				<version>3.2.6-SNAPSHOT</version>
 			</dependency>
 
 			<!-- https://mvnrepository.com/artifact/javax.inject/javax.inject -->
